@@ -42,18 +42,16 @@
 </div>
 
     <form class="formulario">
-        <h1>Simulacion de Prestamos</h1><br><br>
+        <h1>Simulación de Prestamos</h1><br><br>
         <label>Dinero solicitado</label>
-        <input type="number" min="10000" max="50000"><br><br>
-        <label for="cuotas">Seleccionar cuotas</label>
-        <select name="cuotas" id="cuotas">
-            <option value="3" selected>3</option>
-            <option value="6">6</option>
-            <option value="12">12</option>
-            <option value="18">18</option>
-            <option value="24">24</option>
-        </select> <br><br>
-        <input class="enviar" type="submit" value="Cotizar" >
+        <input type="number" class="monto" id="monto" min="1000" max="50000"><br><br>
+        <label for="cuotas">Seleccionar cuotas</label><br>
+        <input type="radio" name="cambio" id="tres">Tres
+        <input type="radio" name="cambio" id="seis">Seis
+        <input type="radio" name="cambio" id="doce">Doce
+        <input type="radio" name="cambio" id="dieciocho">Dieciocho
+        <input type="radio" name="cambio" id="venticuatro">Venticuatro
+        <br><input class="enviar" type="button" value="Cotizar" onclick="cotizar()">
     </form>
 
 
